@@ -68,12 +68,12 @@ const SidecarStatus = createReactClass({
           break;
         case SidecarStatusEnum.FAILING:
           statusMessage = status.message;
-          statusClass = 'text-danger';
+          statusClass = `text-danger ${commonStyles.collectorMessage}`;
           statusBadge = <i className="fa fa-warning fa-fw" />;
           break;
         case SidecarStatusEnum.STOPPED:
           statusMessage = status.message;
-          statusClass = 'text-danger';
+          statusClass = `text-danger ${commonStyles.collectorMessage}`;
           statusBadge = <i className="fa fa-stop fa-fw" />;
           break;
         default:
